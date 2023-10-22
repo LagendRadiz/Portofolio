@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Young+Serif&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Young Serif', serif;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  background: #03091e;
+  overflow-x: hidden;
+}
+header {
+  width: 100%;
+  height: 70px;
+  overflow-x: hidden;
+}
+nav {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  padding-left: 20px;
+  justify-content: space-between;
+  border-bottom: 2px solid lightblue;
+  box-shadow: 0 0 10px lightblue;
+  z-index: 100;
+  background: transparent;
+  transition: background-color 0.3s ease;
+  color: white;
+}
+nav .scrolled{
+  color: black;
+}
+nav .humberger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+}
+.humberger span {
+  width: 30px;
+  height: 2px;
+  display: flex;
+  border-radius: 10px;
+  background: gray;
+}
+nav .logo {
+  margin-left: 20px;
+}
+nav .logo h1 {
+  font-size: 35px;
+  font-family: 'Poppins', sans-serif;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-right: 50px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li img {
+  display: none;
+}
+nav ul li a {
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.3s;
+  color: white;
+  background: #03091e;
+  padding: 5px 10px;
+  border-radius: 10%;
+}
+nav ul li a:hover {
+  color: aqua;
+}
+#MProfile {
+  width: 90%;
+  height: 75vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding-top: 50px;
+}
+.deks {
+  color: white;
+  width: 500px;
+  height: 300px;
+}
+.deks h1 {
+  font-size: 30px;
+}
+.deks h3 {
+  font-size: 20px;
+  color: aqua;
+  -webkit-text-stroke: 0.1px white;
+  animation: warna 1s infinite;
+}
+.deks h5 {
+  padding-top: 20px;
+  font-weight: 100;
+}
+.deks ul {
+  width: 250px;
+  height: 80px;
+  margin-top: 50px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+.deks ul li {
+  list-style: none;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 10px lightblue;
+  background: rgb(236, 233, 233);
+  transition: 0.3s;
+  animation: rgb 0.5s infinite;
+}
+.deks ul li:hover {
+  background: white;
+  border: 3px solid white;
+  box-shadow: 0 0 20px lightcyan;
+}
+.deks ul li a img {
+  width: 30px;
+  height: 30px;
+  transition: 0.3s;
+}
+.deks ul li a {
+  padding: 5px 5px 5px 5px;
+  display: flex;
+}
+.deks ul li:hover img {
+  transform: scale(1.1);
+}
+#MProfile .profile img {
+  width: 400px;
+  height: 400px;
+}
+#about {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0 0 20px;
+  color: white;
+  max-width: 90%;
+}
+#about h1 {
+  font-size: 40px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+#about h1 span {
+  color: aqua;
+}
+#about p {
+  padding-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+}
+
+#skills {
+  padding: 100px 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+#skills h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 100;
+  text-align: center;
+}
+#skills h1 span {
+  font-family: 'Poppins', sans-serif;
+  color: aqua;
+}
+#skills ul {
+  width: 98%;
+  max-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#skills ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  font-size: 18px;
+  background: white;
+  padding: 20px 25px;
+  border-radius: 10%;
+  border: 2px solid aqua;
+  box-shadow: 0 0 10px lightblue;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#skills ul li:hover {
+  background: aqua;
+  border: 2px solid blue;
+  box-shadow: 0 0 10px aqua;
+}
+#skills ul li:hover img {
+  transform: scale(1.1);
+}
+#skills ul li img {
+  width: 70px;
+  height: 70px;
+  transition: 0.3s;
+}
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 350px;
+  width: 100%;
+  height: 100vh;
+}
+#contact .container {
+  display: flex;
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid aqua;
+  box-shadow: 0 0 20px lightblue;
+  padding: 20px;
+  position: relative;
+}
+.container .deskrip {
+  width: 50%;
+}
+.container .deskrip h1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+.deskrip h5 {
+  font-size: 15px;
+  padding-top: 20px;
+}
+.deskrip span h5 {
+  font-size: 20px;
+  padding-top: 10px;
+}
+.deskrip span h6 {
+  font-size: 15px;
+  text-align: start;
+}
+.container span {
+  display: flex;
+  flex-direction: column;
+}
+.deskrip content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 20px;
+  gap: 5px;
+}
+.deskrip content img {
+  width: 25px;
+  height: 25px;
+}
+.deskrip content .email {
+  display: flex;
+  gap: 5px;
+}
+.deskrip content .wa {
+  display: flex;
+  gap: 5px;
+}
+.container .box-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  gap: 10px;
+}
+.box-contact .name {
+  position: relative;
+}
+.box-contact .name input {
+  width: 190px;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  padding-left: 60px;
+  font-size: 15px;
+}
+.box-contact .name p {
+  position: absolute;
+  top: 0;
+}
+.box-contact .email {
+  position: relative;
+}
+.box-contact .email input {
+  width: 190px;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  padding-left: 60px;
+  font-size: 15px;
+}
+.box-contact .email p {
+  position: absolute;
+  top: 0;
+}
+.box-contact .number p {
+  position: absolute;
+  top: 0;
+}
+.box-contact .number {
+  position: relative;
+}
+.box-contact .number input {
+  width: 190px;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  padding-left: 60px;
+  font-size: 15px;
+}
+.box-contact .number p {
+  position: absolute;
+  top: 0;
+}
+.box-contact .message input {
+  width: 245px;
+  height: 100px;
+}
+.box-contact button {
+  margin-top: 20px;
+  position: relative;
+  transition: 0.2s;
+}
+.box-contact button {
+  width: 245px;
+  height: 50px;
+  text-align: center;
+  background: transparent;
+  cursor: pointer;
+}
+.box-contact button:active {
+  background: black;
+  color: white;
+  transform: scale(0.9);
+}
+footer {
+  background: rgb(38, 38, 38);
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  color: white;
+}
+/* RESPONSIVE */
+
+/* extra small */
+@media screen and (max-width: 576px) {
+  nav .humberger {
+    margin-right: 50px;
+    display: flex;
+  }
+  nav ul {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 100px;
+    height: 350px;
+    padding: 15px 10px;
+    right: -30px;
+    top: 75px;
+    transform: translateX(100%);
+    transition: 0.3s;
+    background: white;
+  }
+  nav ul.slide {
+    transform: translateX(0);
+  }
+  nav ul li img {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+  }
+  nav ul li a {
+    color: black;
+  }
+  #MProfile {
+    flex-direction: column-reverse;
+    margin-top: 10px;
+  }
+  .profile img {
+    width: 300px;
+    height: 300px;
+  }
+  .deks {
+    width: 100%;
+    height: 100vh;
+  }
+  .deks h1 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .deks h3 {
+    text-align: center;
+    font-size: 13px;
+  }
+  .deks h5 {
+    text-align: justify;
+    font-size: 10px;
+  }
+  .deks ul {
+    margin: start;
+    justify-content: start;
+    gap: 10px;
+    height: 50px;
+    align-items: start;
+  }
+  .deks ul li {
+    padding: 5px 5px 5px 5px;
+  }
+  .deks ul li a {
+    display: flex;
+  }
+  .deks ul li img {
+    width: 20px;
+    height: 20px;
+  }
+  #about p {
+    font-size: 14px;
+  }
+  #skills ul li {
+    padding: 10px 15px;
+  }
+}
+
+/* small */
+@media screen and (min-width: 576px) {
+}
+/* medium */
+@media screen and (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .deks h1 {
+    font-size: 25px;
+  }
+  .deks h3 {
+    font-size: 23px;
+  }
+  .deks h5 {
+    font-size: 16px;
+  }
+  .deks ul {
+    margin-top: 30px;
+    align-items: start;
+    padding: 5px;
+    width: 200px;
+  }
+  .deks ul li {
+    padding: 6px 6px 3px 6px;
+  }
+  .deks ul li img {
+    width: 20px;
+    height: 20px;
+  }
+  .profile img {
+    width: 100px;
+    height: 100px;
+  }
+}
+/* large */
+@media screen and(min-width:992px) {
+  .profile img {
+    width: 1000px;
+    height: 1000px;
+  }
+}
